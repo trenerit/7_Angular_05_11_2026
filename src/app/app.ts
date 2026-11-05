@@ -3,10 +3,18 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  // imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('startAngular');
+
+  protected imie = "Piotr";
+  protected nazwisko = "Kania";
+
+  clickBtn() {
+    this.imie = "Anna";
+    console.log(`${this.imie} ${this.nazwisko}`);
+  }
+
 }
