@@ -1,0 +1,5 @@
+<p>Twoje imię to: {{imie}}</p>
+<form #myForm="ngForm" (ngSubmit)="formSubmit(myForm)">
+    <input type="text" placeholder="Podaj imię" name="imie" ngModel>
+    <button type="submit">Pobierz</button>
+</form>
