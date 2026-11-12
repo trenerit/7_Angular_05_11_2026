@@ -1,0 +1,15 @@
+<ul>
+
+    @for(user of forTab; track user.id) {
+        <li>{{user.id}} {{user.login}} {{$index}}</li>
+    }
+
+</ul>
+
+<ul>
+
+    @for(user of forTab; track $index) {
+        <li>{{user.id}} {{user.login}} {{$index}}</li>
+    }
+
+</ul>
