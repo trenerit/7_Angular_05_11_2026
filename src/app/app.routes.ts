@@ -4,6 +4,7 @@ import { Formularze } from './formularze/formularze';
 import { If } from './if/if';
 import { For } from './for/for';
 import { Users } from './users/users';
+import { DetailsUser } from './details-user/details-user';
 
 export const routes: Routes = [
     {path: '', pathMatch: 'full', redirectTo: 'start'},
@@ -12,4 +13,5 @@ export const routes: Routes = [
     {path: 'if', component: If},
     {path: 'for', component: For},
     {path: 'users', component: Users},
+    {path: 'users/:id', component: DetailsUser},
 ];
