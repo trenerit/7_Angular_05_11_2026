@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>Lp</th>
+            <th>#</th>
+            <th>Nazwisko, imię</th>
+            <th>Login</th>
+            <th>Wiek</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(user of tabUsers; track user.id; let i = $index) {
+            <tr>
+                <td>{{i + 1}}</td>
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.login}}</td>
+                <td>{{user.age}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
